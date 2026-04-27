@@ -1,0 +1,30 @@
+using UnityEditor.Experimental.GraphView;
+using UnityEditor.Search;
+using UnityEngine;
+using UnityEngine.LowLevelPhysics2D;
+
+public class GameManager : MonoBehaviour
+{
+
+    bool tienearma;
+    bool tienemunicion;
+    bool noestaaturdido;
+    bool puedeatacar;
+
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    // ejercicio del 1 al 15
+    void Start()
+    {
+
+        if ((tienemunicion = true) && (tienearma = true) && (noestaaturdido = true)) puedeatacar = true;
+        else puedeatacar = false;
+
+
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
+}

@@ -1,0 +1,40 @@
+using UnityEditor.Experimental.GraphView;
+using UnityEditor.Search;
+using UnityEngine;
+using UnityEngine.LowLevelPhysics2D;
+
+public class GameManager : MonoBehaviour
+{
+    bool nieve;
+    bool lluvia;
+    bool nublado;
+    bool soleado;
+    int temperatura;
+
+
+
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    // ejercicio del 1 al 15
+    void Start()
+    {
+   if (temperatura == 0-10) nieve = true;
+     else nieve = false;
+
+   if (temperatura == 11-20) lluvia = true; else lluvia = false;
+
+   if (temperatura == 21 - 30) nublado = true; else nublado = false;
+
+    if (temperatura == 31-60) soleado = true; else soleado = false;
+
+   
+
+
+
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
+}

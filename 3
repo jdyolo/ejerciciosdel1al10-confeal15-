@@ -1,0 +1,31 @@
+using UnityEditor.Experimental.GraphView;
+using UnityEditor.Search;
+using UnityEngine;
+using UnityEngine.LowLevelPhysics2D;
+
+public class GameManager : MonoBehaviour
+{
+    bool Detenido;
+    bool caminando;
+    bool corriendo;
+    bool sprint;
+    int velocidaddelpersonaje;
+
+
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    // ejercicio del 1 al 15
+    void Start()
+    {
+     velocidaddelpersonaje = 0;  Detenido = true;
+     velocidaddelpersonaje = 1-3; caminando = true;
+     velocidaddelpersonaje =4-7; sprint = true;
+     velocidaddelpersonaje=8-10; corriendo = true;  
+
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
+}

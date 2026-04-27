@@ -1,0 +1,13 @@
+bool Playerdead;
+bool Playeralive;
+bool Playerhurt;
+int Playerhealth;
+
+bool Start()
+{
+ if (Playerhealth >= 0) Playeralive = true; 
+
+ else (Playerhealth <=0) : Playeralive = false;
+
+    if (Playerhealth <= 30) Playerhurt = true;
+    else (Playerhealth >= 30):  Playeralive = true;
